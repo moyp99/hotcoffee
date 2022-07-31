@@ -1,0 +1,254 @@
+.fp_welcome
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 2vw 0 
+    img
+        width: 50%
+    @media ( max-width: 767px  )
+        flex-wrap: wrap
+        img
+            width: 100%
+            padding: 0 1.5vh
+        div
+            &:first-child
+                margin: 1vh 0
+                h1
+                    font-size: 12.4vw
+                    img
+                        width: 12vw !important
+                        padding: 0
+        
+
+.fp_form
+    display: flex
+    margin-top: 4vw
+    border: 1px solid #e2e2e2
+    border-radius: 6px
+    padding: 0.5vw
+    width: 80%
+    input
+        width: 100%
+        border: none
+        font-size: 2.2vw
+    button
+        letter-spacing: 2px
+        text-transform: uppercase
+    @media ( max-width: 767px  )
+        width: 100%
+        padding: 1vw
+        margin-bottom: 2vh
+        input
+            font-size: 4.2vw
+
+
+
+
+h1
+    text-transform: capitalize
+    margin: 0 4vw 0 0
+    img
+        width: 6vw !important
+
+.content
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    @media (max-width: 767px)
+        justify-content: center
+    .container
+        width: 31%
+        margin-bottom: 5vh
+        .post
+            border: 1px solid #E2E2E2
+            box-shadow: 0px 5px 4px rgba(221, 221, 221, 0.25)
+            border-radius: 5px
+            height: 30vw
+            .media
+                height: 100%
+                overflow-y: hidden
+            img
+                height: 50%
+                width: 100%
+                object-fit: cover 
+            .media-body
+                height: 100%
+                padding: 1.75vh 1.5vw
+                position: relative
+                .title
+                    font-size: 2vw
+                    margin: 0
+                    a:hover
+                        color: var(--primary)
+                    
+                .intro
+                    height: 25%
+                    overflow-y: hidden
+                    p
+                        margin: 1vh 0
+                        color: var(--info)
+                        font-size: 1.3vw
+                .meta
+                    margin: 5% 0 0 
+                    position: relative
+                    bottom: 0
+                    display: flex
+                    justify-content: space-between
+                    p
+                        margin: 0
+                        font-size: 1.3vw
+                                
+                    a
+                        font-weight: 600
+                        color: var(--secondary)
+                        text-decoration: none
+                        font-size: 1.4vw
+                        &:hover
+                            color: var(--primary)
+          
+        
+        @media (min-width: 768px)
+            &:first-child
+                width: 100%
+
+                .post
+                    height: 20vw
+                    .media
+                        display: flex
+                        justify-content: space-between
+                        height: 100%
+
+                        img
+                            height: auto
+                            width: 44%
+                            order: 2
+                            object-fit: cover
+                        .media-body
+                            width: 70%
+                            display: flex
+                            flex-flow: column
+                            justify-content: center
+                            padding: 0 10%
+                            .title
+                                margin: 2% 0
+                                font-size: 2.65vw
+                                margin-bottom: 2vw
+                            .intro
+                                height: 25%
+                                overflow-y: hidden
+                                p
+                                    margin: 0
+                                    color: var(--info)
+                                    font-size: 1.5vw
+                            .meta
+                                display: flex
+                                justify-content: space-between
+                                margin: 1vw 0 0
+                                p
+                                    margin: 0
+                                    font-size: 1.3vw
+
+                                a
+                                    font-weight: 600
+                                    color: var(--secondary)
+                                    text-decoration: none
+                                    font-size: 1.4vw
+                                    &:hover
+                                        color: var(--primary)
+            &:nth-child(5)
+                
+                width: 100%
+                margin-bottom: 3vh
+                .post
+                    background-color: var(--light)
+                    height: 40vw
+                    .media
+                        display: flex
+                        justify-content: space-between
+                        height: 100%
+                        img
+                            height: auto
+                            width: 50%
+                            order: 2
+                            object-fit: cover        
+                        .media-body
+                            width: 50%
+                            display: flex
+                            flex-flow: column
+                            justify-content: center
+                            align-content: center
+                            padding: 0 8%
+                            .title
+                                margin: 2% 0
+                                font-size: 4vw
+                                a
+                                    color: #000
+                                    &:hover
+                                        color: var(--primary)
+                            .intro
+                                height: 30%
+                                overflow-y: hidden
+                                p
+                                    color: var(--info)
+                                    font-size: 1.5vw
+                                    margin: 0
+                            .meta
+                                display: flex
+                                justify-content: space-between
+                                margin: 1vw 0 0
+                                p
+                                    margin: 0
+                                    font-size: 1.3vw
+                                
+                                a
+                                    font-weight: 600
+                                    color: var(--secondary)
+                                    text-decoration: none
+                                    font-size: 1.4vw
+                                    &:hover
+                                        color: var(--primary)
+
+    @media ( max-width: 767px  )
+        .container
+            width: 96%
+            .post
+                height: 95vw
+                .media
+                    .media-body
+                        padding: 1.5vh 2.5vw
+                        .title
+                            font-size: 7vw
+                        .intro
+                            p
+                                font-size: 3.5vw
+                        .meta
+                            p
+                                font-size: 3vw
+                            a
+                                font-size: 3.25vw
+            
+.post-nav
+    display: flex
+    justify-content: flex-end
+    a
+        display: flex
+        align-items: center
+        font-weight: 500
+        padding: 0.7vw
+        transition: all 0.4s ease-in-out
+        border-radius: 4px
+        border: none
+        background-color: var(--primary)
+        color: #fff
+        text-align: center
+        margin: 0 1vw 0 0
+        text-decoration: none
+        p
+            margin: 0 0.5vw
+        &:hover
+            background-color: var(--info)
+    
+            
+        
+    
+    
